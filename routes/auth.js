@@ -22,7 +22,6 @@ router.get('/', auth, async (req, res) => {
   }
 });
 
-
 // @route POST api/auth
 // @desc  Auth FB user & get token
 // @access Public
