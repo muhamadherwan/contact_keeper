@@ -7,9 +7,8 @@ const auth = require('../middleware/auth');
 const { check, validationResult } = require('express-validator'); 
 const User = require('../models/User');
 
-
 // @route GET api/auth
-// @desc  Get logged in user
+// @desc  Get FB logged in user
 // @access Private
 
 router.get('/', auth, async (req, res) => {
@@ -22,10 +21,8 @@ router.get('/', auth, async (req, res) => {
   }
 });
 
-
-
 // @route POST api/auth
-// @desc  Auth user & get token
+// @desc  Auth FB user & get token
 // @access Public
 router.post(
   '/', 
