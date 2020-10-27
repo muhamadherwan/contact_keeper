@@ -11,6 +11,7 @@ const User = require('../models/User');
 // @desc  Get FB logged in user
 // @access Private
 
+
 router.get('/', auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select('-password');
@@ -20,6 +21,7 @@ router.get('/', auth, async (req, res) => {
     res.status(500).send('Sever Error');
   }
 });
+
 
 // @route POST api/auth
 // @desc  Auth FB user & get token
