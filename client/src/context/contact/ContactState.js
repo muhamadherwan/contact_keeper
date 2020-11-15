@@ -38,6 +38,7 @@ const ContactState = props => {
         type: "personal"
       }
     ],
+    
     current:null
 
   };
@@ -73,7 +74,7 @@ const ContactState = props => {
     <ContactContext.Provider
       value={{
         contacts: state.contacts,
-        current: state.currents,
+        current: state.current,
         addContact,
         deleteContact,
         setCurrent,
