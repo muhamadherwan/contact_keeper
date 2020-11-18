@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import AlertContext from '../../context/alert/alertContext';
-import AlertState from '../../context/alert/AlertState';
+
 
 const Alerts = () => {
   const alertContext = useContext(AlertContext);
