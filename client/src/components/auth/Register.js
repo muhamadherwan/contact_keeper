@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Register = () => {
-  const [userm, setUser] = useState({
+  const [user, setUser] = useState({
     name: '',
     email: '',
     password: '',
@@ -19,6 +19,7 @@ const Register = () => {
     e.preventDefault();
     console.log('Regiter Submit');
   }
+
   return (
    <div className="form-container">
      <h1>
